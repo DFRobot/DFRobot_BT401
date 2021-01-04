@@ -1,0 +1,66 @@
+#######################################
+# Syntax Coloring Map For DFRobot_BT401
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_BT401	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+setVOl	KEYWORD2
+switchFunction	KEYWORD2
+setPlayMode	KEYWORD2
+playControl	KEYWORD2
+next	KEYWORD2
+last	KEYWORD2
+playFileNum	KEYWORD2
+playSpecFile	KEYWORD2
+delCurFile	KEYWORD2
+callOut	KEYWORD2
+controltalk	KEYWORD2
+reset	KEYWORD2
+getBtStatus	KEYWORD2
+getTelNumber	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+eBluetooth	LITERAL1
+eUDisk	LITERAL1
+eTFCard	LITERAL1
+eIdle	LITERAL1
+
+eRepeatAll	LITERAL1
+eDeviceCycle	LITERAL1
+eSingleCycle	LITERAL1
+eDeviceRandom	LITERAL1
+eFileCycle	LITERAL1
+
+eStop	LITERAL1
+ePlay	LITERAL1
+ePause	LITERAL1
+ePPSwitch	LITERAL1
+eFF	LITERAL1
+eFR	LITERAL1
+eNextFile	LITERAL1
+eLastFile	LITERAL1
+
+eCallBack	LITERAL1
+eDisconnectBLE	LITERAL1
+eRejectCall	LITERAL1
+eHangUp	LITERAL1
+eAnswer	LITERAL1
+
+eStandby	LITERAL1
+eBTIdle	LITERAL1
+ePlaying	LITERAL1
+eCalling	LITERAL1
+eOnphone	LITERAL1
+eError	LITERAL1
