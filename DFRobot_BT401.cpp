@@ -2,12 +2,11 @@
  * @file DFRobot_BT401.cpp
  * @brief Define the basic structure of DFRobot_BT401 class and the implementation of underlying methods
  * @copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
+ * @License     The MIT License (MIT)
  * @author [Eddard](eddard.liu@dfrobot.com)
  * @version  V1.0
  * @date  2020-12-29
- * @get from https://www.dfrobot.com
- * @url https://github.com/cdjq/DFRobot_BT401
+ * @url https://github.com/DFRobot/DFRobot_BT401
  */
 
 #include <DFRobot_BT401.h>
@@ -29,7 +28,6 @@ bool DFRobot_BT401::begin(Stream &s){
   return true;
 }
 
-//Set volume 
 bool DFRobot_BT401::setVOl(uint8_t vol)
 {
   char data[2];
@@ -51,7 +49,6 @@ bool DFRobot_BT401::setVOl(uint8_t vol)
   }
 }
 
-//Set working mode 
 bool DFRobot_BT401::switchFunction(eFunction_t function)
 {
   char data[1];
@@ -64,7 +61,6 @@ bool DFRobot_BT401::switchFunction(eFunction_t function)
   }
 }
 
-//Playback mode 
 bool DFRobot_BT401::setPlayMode(ePlayMode_t mode)
 {
   char data[1];
@@ -77,7 +73,6 @@ bool DFRobot_BT401::setPlayMode(ePlayMode_t mode)
   }
 }
 
-//Play control   Only valid for playback by TF card and U-disk   AA
 bool DFRobot_BT401::playControl(ePlayControl_t cmd)
 {
   char data[1];
@@ -90,7 +85,6 @@ bool DFRobot_BT401::playControl(ePlayControl_t cmd)
   }
 }
 
-//Next 
 bool DFRobot_BT401::next()
 {
   sendCMD("CD");
@@ -101,7 +95,6 @@ bool DFRobot_BT401::next()
   }
 }
 
-//Last 
 bool DFRobot_BT401::last()
 {
   sendCMD("CC");
@@ -112,7 +105,6 @@ bool DFRobot_BT401::last()
   }
 }
 
-//Play the N-th file of the device 
 bool DFRobot_BT401::playFileNum(uint16_t number)
 {
   char data[5];
@@ -125,7 +117,6 @@ bool DFRobot_BT401::playFileNum(uint16_t number)
   }
 }
 
-//Repeat all songs in the specified file folder 
 bool DFRobot_BT401::playSpecFile(const char* path)
 {
   sendCMD("AF", path);
@@ -136,7 +127,6 @@ bool DFRobot_BT401::playSpecFile(const char* path)
   }
 }
 
-//Delete the currently playing file 
 bool DFRobot_BT401::delCurFile()
 {
   sendCMD("AA08");
@@ -147,7 +137,6 @@ bool DFRobot_BT401::delCurFile()
   }
 }
 
-//Dail a phone number 
 bool DFRobot_BT401::callOut(const char *phoneNumber)
 {
   sendCMD("BT", phoneNumber);
@@ -158,7 +147,6 @@ bool DFRobot_BT401::callOut(const char *phoneNumber)
   }
 }
 
-//Calling control 
 bool DFRobot_BT401::controltalk(eControltalk_t cmd)
 {
   char data[1];
@@ -200,7 +188,7 @@ String DFRobot_BT401::getTelNumber(){
   return phone;
 
 }
-//Reset 
+
 bool DFRobot_BT401::reset()
 {
   sendCMD("CZ");

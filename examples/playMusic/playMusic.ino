@@ -1,13 +1,12 @@
 /*!
  * @file playMusic.ino.ino
  * @brief Play song in TF card 
- * @n Experiment Phenomenon：play music and do the related actions 
+ * @details Experiment Phenomenon：play music and do the related actions 
  * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
  * @licence     The MIT License (MIT)
  * @author [Eddard](Eddard.liu@dfrobot.com)
  * @version  V1.0
  * @date  2020-12-29
- * @get from https://www.dfrobot.com
  * @url https://github.com/cdjq/DFRobot_ID809
 */
 

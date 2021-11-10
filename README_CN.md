@@ -1,34 +1,31 @@
 # DFRobot_BT401
-- [中文版](./README_CN.md)
-
-This Bluetooth module features Bluetooth/U-disk/TF-card playback, and Bluetooth call function, supporting simple and clear serial port control function, BLE pass-through, and SPP pass-through functions. The highlight of this product is the dual-mode Bluetooth, which also means that it can run the Bluetooth audio playback and data transmission at the same time, greatly reducing the development difficulty of embedded Bluetooth in other products.
+蓝牙模块具有蓝牙/ u盘/ tf卡、蓝牙呼叫功能，支持简单清晰的串口控制功能、BLE直通、SPP直通功能。本产品的亮点是双模式蓝牙，这也意味着它可以同时运行蓝牙音频播放和数据传输，大大降低了嵌入式蓝牙在其他产品中的开发难度。
 
 
 
 ![Product Image](./resources/images/DFR0781.png)
 
 
-## Product Link (https://www.dfrobot.com/product-2177.html)
+## 产品链接 (https://www.dfrobot.com/product-2177.html)
     DFR0781: Audio & BLE/SPP Pass-through Module - Bluetooth 5.0
-## Table of Contents
+## 目录
 
-* [Summary](#summary)
-* [Installation](#installation)
-* [Methods](#methods)
-* [Compatibility](#compatibility)
-* [History](#history)
-* [Credits](#credits)
-
-## Summary
+  * [概述](#概述)
+  * [库安装](#库安装)
+  * [方法](#方法)
+  * [兼容性](#兼容性)
+  * [历史](#历史)
+  * [创作者](#创作者)
+## 概述
 1. Play music<br>
 2. Answer calls
 
 
-## Installation
+## 库安装
 
 To use this library, first download the library file, paste it into the \Arduino\libraries directory, then open the examples folder and run the demo in the folder.
 
-## Methods
+## 方法
 ```C++
   /**
    * @fn begin
@@ -262,7 +259,7 @@ To use this library, first download the library file, paste it into the \Arduino
   bool setPlayTime(uint16_t second);
 ```
 
-## Compatibility
+## 兼容性
 
 MCU                | Work Well    | Work Wrong   | Untested    | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
@@ -274,11 +271,11 @@ ESP8266        |      √       |              |             |
 M0        |      √       |              |             | 
 
 
-## History
+## 历史
 
 - 2020/12/29 - Version 1.0.0 released.
 
-## Credits
+## 创作者
 
 Written by fengli(eddard.liu@dfrobot.com), 2020.12.29 (Welcome to our [website](https://www.dfrobot.com/))
 

@@ -1,13 +1,12 @@
 /*!
  * @file answerCall.ino.ino
  * @brief Get incoming call information 
- * @n Experiment Phenomenon：Print phone number and answer the phone when a call comes 
+ * @details Experiment Phenomenon：Print phone number and answer the phone when a call comes 
  * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
+ * @license     The MIT License (MIT)
  * @author [Eddard](Eddard.liu@dfrobot.com)
  * @version  V1.0
  * @date  2020-12-29
- * @get from https://www.dfrobot.com
  * @url https://github.com/cdjq/DFRobot_ID809
 */
 
