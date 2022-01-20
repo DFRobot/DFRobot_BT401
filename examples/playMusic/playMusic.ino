@@ -7,7 +7,7 @@
  * @author [Eddard](Eddard.liu@dfrobot.com)
  * @version  V1.0
  * @date  2020-12-29
- * @url https://github.com/cdjq/DFRobot_ID809
+ * @url https://github.com/DFRobot/DFRobot_BT401
 */
 
 #include <DFRobot_BT401.h>
