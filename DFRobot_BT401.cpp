@@ -51,7 +51,7 @@ bool DFRobot_BT401::setVOl(uint8_t vol)
 
 bool DFRobot_BT401::switchFunction(eFunction_t function)
 {
-  char data[1];
+  char data[4];
   itoa(function, data, 10);
   sendCMD("CM0", data);
   if(readAck() == "OK\r\n"){
@@ -63,7 +63,7 @@ bool DFRobot_BT401::switchFunction(eFunction_t function)
 
 bool DFRobot_BT401::setPlayMode(ePlayMode_t mode)
 {
-  char data[1];
+  char data[4];
   itoa(mode, data, 10);
   sendCMD("AC0", data);
   if(readAck() == "OK\r\n"){
@@ -75,7 +75,7 @@ bool DFRobot_BT401::setPlayMode(ePlayMode_t mode)
 
 bool DFRobot_BT401::playControl(ePlayControl_t cmd)
 {
-  char data[1];
+  char data[4];
   itoa(cmd, data, 10);
   sendCMD("AA0", data);
   if(readAck() == "OK\r\n"){
@@ -149,7 +149,7 @@ bool DFRobot_BT401::callOut(const char *phoneNumber)
 
 bool DFRobot_BT401::controltalk(eControltalk_t cmd)
 {
-  char data[1];
+  char data[4];
   itoa(cmd, data, 10);
   sendCMD("BA0", data);
   if(readAck() == "OK\r\n"){
