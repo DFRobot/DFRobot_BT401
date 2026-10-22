@@ -277,6 +277,7 @@ M0        |      √       |              |             |
 ## History
 
 - 2020/12/29 - Version 1.0.0 released.
+- 2026/10/22 - Version 1.0.1 released. switchFunction() now switches to the requested mode instead of always Bluetooth; fix too-small itoa buffers; add setPrompt() to turn the prompt tone on or off.
 
 ## Credits
 
