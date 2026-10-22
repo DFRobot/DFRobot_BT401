@@ -28,6 +28,24 @@ bool DFRobot_BT401::begin(Stream &s){
   return true;
 }
 
+bool DFRobot_BT401::setPrompt(bool on)
+{
+  DBG("\r\n");
+  if(on){
+    sendCMD("CN0", "1");
+  } else {
+    sendCMD("CN0", "0");
+  }
+  DBG("\r\n");
+  if(readAck() == "OK\r\n"){
+    DBG("true\r\n");
+    return true;
+  } else{
+    DBG("false\r\n");
+    return false;
+  }
+}
+
 bool DFRobot_BT401::setVOl(uint8_t vol)
 {
   char data[2];
