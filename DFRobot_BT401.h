@@ -106,6 +106,16 @@ public:
   bool begin(Stream &s);
   
   /**
+   * @fn setPrompt
+   * @brief Set the prompt tone(Power-down save) 
+   * @param on true or false
+   * @return Boolean type, the result of seted
+   * @retval true The setting succeeded
+   * @retval false Setting failed
+   */
+  bool setPrompt(bool on);
+  
+  /**
    * @fn setVOl
    * @brief Set volume 
    * @param vol 0-30
