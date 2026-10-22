@@ -53,7 +53,7 @@ bool DFRobot_BT401::switchFunction(eFunction_t function)
 {
   char data[1];
   itoa(function, data, 10);
-  sendCMD("CM0", "1");
+  sendCMD("CM0", data);
   if(readAck() == "OK\r\n"){
     return true;
   } else{
